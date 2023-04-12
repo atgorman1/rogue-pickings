@@ -167,9 +167,11 @@ footer span {
 @media all and (min-width: 768px) {
   header nav ul li {
     font-size: 1em;
+    line-height: 2.5em;
   }
 
   .bottom-section .content-wrapper {
+    font-size: 1em;
     display: flex;
     justify-content: space-between;
     border-top: 5px solid #eee;
@@ -184,6 +186,7 @@ footer span {
 
   .section-one {
     width: 29%;
+    padding-right: 0.8em;
   }
 
   .section-two {
@@ -202,7 +205,6 @@ footer span {
 
   .bottom-section h3 {
     margin: 2em 0;
-    font-size: 1.1em;
   }
 
   .menu-list {
@@ -212,7 +214,6 @@ footer span {
 
   .menu-list li {
     color: #45610e;
-    font-size: 0.9em;
     line-height: 2em;
   }
 }
@@ -224,7 +225,8 @@ footer span {
   header {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    height: 7em;
   }
 
   header h1 {
@@ -233,7 +235,7 @@ footer span {
     width: 79%;
     display: flex;
     text-align: right;
-    align-items: flex-end;
+    align-items: center;
     border: none;
   }
 
@@ -243,7 +245,7 @@ footer span {
     text-align: left;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
   }
 
   header nav ul {
