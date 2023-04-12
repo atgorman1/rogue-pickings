@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #000000;
 }
 
@@ -123,17 +123,14 @@ header nav ul li a {
 }
 
 .section-one {
-  /*old - width: 29%;*/
 }
 
 .section-two {
-  /* old - width: 42%: */
   border-top: 5px solid #eee;
   border-bottom: 5px solid #eee;
 }
 
 .section-three {
-  /* old - width: 29%;*/
 }
 
 .bottom-section h3 {
@@ -165,4 +162,95 @@ footer span {
   text-transform: lowercase;
   color: #45610e;
   font-size: 0.875rem;
+}
+/******** Tablet Styles ********/
+@media all and (min-width: 768px) {
+  header nav ul li {
+    font-size: 1em;
+  }
+
+  .bottom-section .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    box-sizing: border-box;
+  }
+
+  .section-one {
+    width: 29%;
+  }
+
+  .section-two {
+    width: 42%;
+    border-left: 5px solid #eee;
+    border-right: 5px solid #eee;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0 1.875em;
+  }
+
+  .section-three {
+    width: 29%;
+    padding-left: 0.8em;
+  }
+
+  .bottom-section h3 {
+    margin: 2em 0;
+    font-size: 1.1em;
+  }
+
+  .menu-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .menu-list li {
+    color: #45610e;
+    font-size: 0.9em;
+    line-height: 2em;
+  }
+}
+/******** Desktop Styles ********/
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 1em;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 20px 0;
+    width: 79%;
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+    border: none;
+  }
+
+  header nav {
+    padding: 20px 0;
+    width: 21%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
